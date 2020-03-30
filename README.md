@@ -11,9 +11,11 @@ Implements the A* algorithm to find the shortest path between two points while o
 
 ![Image of Program](README_images/start.png)
 
-When you run main.py, you are greeted with this
-Left click to set endpoints (maximum of two)
-Right click to add walls
+When you run main.py, you are greeted with this:
+
+- Left click to set endpoints (maximum of two)
+
+- Right click to add walls
 
 Remove a selection by clicking it with the same click type you created it with
 
