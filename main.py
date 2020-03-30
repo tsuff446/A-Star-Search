@@ -82,6 +82,7 @@ def clearAll():
     for x in range(colNum):
         for y in range(rowNum):
                 buttonArray[x][y].configure(bg="white")
+    global endpoints
     endpoints = []
 
 def startSearch():
