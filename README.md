@@ -3,7 +3,7 @@ Implements the A* algorithm to find the shortest path between two points while o
 
 # Requirements:
 1. Python 3
-2. Tkinter and heapq installed
+2. Tkinter and heapq packages installed
 
 <hr>
 
