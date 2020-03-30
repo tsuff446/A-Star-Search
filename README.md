@@ -21,6 +21,10 @@ Remove a selection by clicking it with the same click type you created it with
 
 After you're done creating your maze, click start to generate the shortest path
 
+Clear obviously clears all squares
+
+# Examples
+
 ![Image of maze](README_images/example.png)
 
-Clear obviously clears all squares
+![Image of maze 2](README_images/example2.png)
