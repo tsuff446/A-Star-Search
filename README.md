@@ -7,6 +7,8 @@ Implements the A* algorithm to find the shortest path between two points while o
 
 <hr>
 
+# Basic Instructions
+
 ![Image of Program](README_images/start.png)
 
 When you run main.py, you are greeted with this
