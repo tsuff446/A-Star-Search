@@ -6,6 +6,7 @@ Implements the A* algorithm to find the shortest path between two points while o
 2. Tkinter and heapq installed
 
 <hr>
+
 ![Image of Program](README_images/start.png)
 
 When you run main.py, you are greeted with this
