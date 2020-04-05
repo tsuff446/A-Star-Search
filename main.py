@@ -15,7 +15,7 @@ Label(root, text="Testing")
 window = Frame(root, width=windowWidth)
 window.grid(row=0, column=0, columnspan=colNum)
 
-
+# handles left clicks
 def left(event):
     xCoord = event.x_root - window.winfo_rootx()
     yCoord = event.y_root - window.winfo_rooty()
@@ -30,6 +30,8 @@ def left(event):
         consoleText['text'] = "Removed endpoint at (" + str(newX) + ", " + str(newY) + ")"
         endpoints.remove((newX, newY))
 
+
+# handles right clicks
 def right(event):
     xCoord = event.x_root - window.winfo_rootx()
     yCoord = event.y_root - window.winfo_rooty()
@@ -47,6 +49,7 @@ def right(event):
         consoleText['text'] = "Added wall at (" + str(newX) + ", " + str(newY) + ")"
 
 
+# draws buttons to screen and stores them in array
 for x in range(colNum):
     buttonArray.append([])
     for y in range(rowNum):
@@ -62,6 +65,7 @@ for x in range(colNum):
 def h(curr, goal):
     return abs(curr[0] - goal[0]) + abs(curr[1] - goal[1])
 
+# highlights path red
 def highlightPath(end, previous):
     curr = previous[end]
     distance = 1
@@ -71,13 +75,14 @@ def highlightPath(end, previous):
         distance += 1
     consoleText['text'] = "Final Distance: " + str(distance)
 
-
+# clears all red squares
 def clearRed():
     for x in range(colNum):
         for y in range(rowNum):
             if buttonArray[x][y].cget('bg') == "red":
                 buttonArray[x][y].configure(bg="white")
 
+# clears entire board
 def clearAll():
     for x in range(colNum):
         for y in range(rowNum):
@@ -85,6 +90,7 @@ def clearAll():
     global endpoints
     endpoints = []
 
+# implements A* algorithm to find shortest path
 def startSearch():
     clearRed()
     if len(endpoints) != 2:
